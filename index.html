@@ -1,434 +1,2112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rustic Scruff | Coal City, IL</title>
-  <meta name="description" content="Rustic Scruff — professional Cleaning Service services in Coal City, IL." />
-  <meta property="og:title" content="Rustic Scruff | Coal City, IL" />
-  <meta property="og:description" content="Professional Cleaning Service services in Coal City, IL." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&fm=webp" />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <style>
-    /* ===== RESET ===== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Sora', sans-serif;
-      color: #2a1f1a;
-      background: #FDFAF6;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Premium SEO Metadata -->
+    <title>Rustic Scruff | Luxury Pet Grooming | Coal City, IL</title>
+    <meta name="description" content="Experience premium cage-free, low-stress pet grooming at Rustic Scruff in Coal City, IL. Spa baths, breed-specific haircuts, nail filing, and personalized canine pampering.">
+    <meta name="keywords" content="dog grooming Coal City IL, pet grooming, cage-free dog grooming, Rustic Scruff, luxury pet spa, dog haircut Coal City, nail filing, teeth brushing, de-shedding treatment">
+    <link rel="canonical" href="https://rusticscruffgrooming.com/">
 
-    :root {
-      --accent:      #0e9f6e;
-      --accent-dark: #047857;
-      --accent-bg:   #0e9f6e14;
-      --ink:         #2a1f1a;
-      --ink-2:       #6b5c50;
-      --ink-3:       #a09590;
-      --cream-1:     #FDFAF6;
-      --cream-2:     #F5EFE6;
-      --cream-3:     #EDE5D8;
-      --border:      #e5ddd5;
-      --white:       #ffffff;
-    }
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rusticscruffgrooming.com/">
+    <meta property="og:title" content="Rustic Scruff | Luxury Pet Grooming | Coal City, IL">
+    <meta property="og:description" content="Experience premium cage-free, low-stress pet grooming at Rustic Scruff in Coal City, IL. Spa baths, breed-specific haircuts, and custom pampering.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&q=80&w=1200">
 
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rusticscruffgrooming.com/">
+    <meta property="twitter:title" content="Rustic Scruff | Luxury Pet Grooming | Coal City, IL">
+    <meta property="twitter:description" content="Experience premium cage-free, low-stress pet grooming at Rustic Scruff in Coal City, IL. Spa baths, breed-specific haircuts, and custom pampering.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&q=80&w=1200">
 
-    /* ===== TOP BAR ===== */
-    .topbar {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      padding: clamp(12px, 3vw, 16px) clamp(16px, 5vw, 48px);
-    }
-    .topbar-inner {
-      max-width: 960px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    }
-    .topbar-brand { font-size: clamp(0.9rem, 3vw, 1.05rem); font-weight: 700; color: var(--ink); }
-    .topbar-phone {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: var(--accent);
-      color: #fff;
-      font-size: clamp(0.75rem, 2.5vw, 0.88rem);
-      font-weight: 700;
-      padding: clamp(7px, 2vw, 10px) clamp(14px, 3vw, 20px);
-      border-radius: 99px;
-      transition: background 0.15s;
-    }
-    .topbar-phone:hover { background: var(--accent-dark); }
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-    /* ===== HERO — split layout, business image left ===== */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: clamp(380px, 60vw, 560px);
-    }
-    .hero-img-col {
-      background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&fm=webp');
-      background-size: cover;
-      background-position: center;
-      min-height: clamp(200px, 35vw, 320px);
-    }
-    .hero-text-col {
-      background: var(--white);
-      display: flex; flex-direction: column; justify-content: center;
-      padding: clamp(32px, 6vw, 64px) clamp(24px, 5vw, 56px);
-    }
-    .hero-badge {
-      display: inline-block;
-      background: var(--accent-bg);
-      color: var(--accent);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 4px;
-      margin-bottom: clamp(14px, 3vw, 20px);
-    }
-    .hero h1 {
-      font-size: clamp(1.8rem, 5vw, 3rem);
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.12;
-      letter-spacing: -0.02em;
-      margin-bottom: clamp(10px, 2vw, 14px);
-    }
-    .hero-sub {
-      font-size: clamp(0.88rem, 2.5vw, 1.05rem);
-      color: var(--ink-2);
-      margin-bottom: clamp(18px, 3vw, 26px);
-      line-height: 1.55;
-    }
-    .hero-rating {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 0.85rem;
-      color: var(--ink-2);
-      margin-bottom: clamp(20px, 4vw, 28px);
-      display: flex;
-    }
-    .hero-stars { color: #f59e0b; letter-spacing: 1px; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 7px;
-      background: var(--accent);
-      color: #fff;
-      font-size: clamp(0.82rem, 2.5vw, 0.95rem);
-      font-weight: 700;
-      padding: clamp(10px, 2vw, 13px) clamp(16px, 3.5vw, 22px);
-      border-radius: 8px;
-      transition: background 0.15s, transform 0.15s;
-    }
-    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
-    .btn-outline {
-      display: inline-flex; align-items: center; gap: 7px;
-      background: transparent;
-      color: var(--ink);
-      border: 1.5px solid var(--border);
-      font-size: clamp(0.82rem, 2.5vw, 0.95rem);
-      font-weight: 600;
-      padding: clamp(10px, 2vw, 13px) clamp(16px, 3.5vw, 22px);
-      border-radius: 8px;
-      transition: border-color 0.15s, color 0.15s;
-    }
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+    <style>
+        /* Modern CSS Reset & Color Tokens */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    /* ===== WRAP ===== */
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px); }
-    .wrap--narrow { max-width: 680px; }
+        :root {
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #121212;
+            --color-bg-tertiary: #181818;
+            --color-gold: #d4af37;
+            --color-gold-light: #f3e5ab;
+            --color-gold-dark: #aa7c11;
+            --color-gold-rgb: 212, 175, 55;
+            --color-text-primary: #f5f5f5;
+            --color-text-secondary: #cccccc;
+            --color-text-muted: #888888;
+            
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Montserrat', sans-serif;
+            
+            --transition-slow: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-medium: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-fast: all 0.3s ease;
+            
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 8rem;
+        }
 
-    /* ===== SECTIONS ===== */
-    .section { padding: clamp(48px, 8vw, 80px) 0; }
-    .section--tinted { background: var(--cream-2); }
-    .section--white  { background: var(--white); }
-    .section-header { margin-bottom: clamp(24px, 4vw, 36px); }
-    .section-label {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-    .section-title {
-      font-size: clamp(1.4rem, 4vw, 2rem);
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.2;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    /* ===== SERVICES — illustrated cards ===== */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-      gap: clamp(14px, 2.5vw, 20px);
-    }
-    .service-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: clamp(20px, 3.5vw, 28px);
-      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
-    }
-    .service-card:hover {
-      box-shadow: 0 8px 32px rgba(42, 31, 26, 0.1);
-      transform: translateY(-4px);
-      border-color: var(--accent);
-    }
-    .service-icon {
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
-      line-height: 1;
-      margin-bottom: clamp(12px, 2vw, 16px);
-    }
-    .service-card h3 {
-      font-size: clamp(0.88rem, 2.5vw, 1rem);
-      font-weight: 600;
-      color: var(--ink);
-      margin-bottom: 6px;
-      line-height: 1.3;
-    }
-    .service-card p {
-      font-size: clamp(0.78rem, 2vw, 0.85rem);
-      color: var(--ink-2);
-      line-height: 1.6;
-    }
+        body {
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
 
-    /* ===== INFO STRIP ===== */
-    .info-strip {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-      gap: clamp(12px, 2vw, 16px);
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: clamp(20px, 3.5vw, 28px);
-    }
-    .info-item {}
-    .info-item-label {
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-      margin-bottom: 6px;
-    }
-    .info-item-value {
-      font-size: clamp(0.88rem, 2.5vw, 0.98rem);
-      color: var(--ink);
-      font-weight: 500;
-      line-height: 1.45;
-    }
-    .info-item a.info-link {
-      color: var(--accent);
-      font-weight: 600;
-    }
-    .info-item a.info-link:hover { opacity: 0.8; }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: #fff;
+        }
 
-    /* ===== MAP ===== */
-    .map-wrap {
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      margin-top: clamp(16px, 3vw, 24px);
-    }
-    .map-wrap iframe { width: 100%; height: clamp(200px, 28vw, 280px); border: 0; display: block; }
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
 
-    /* ===== FOOTER ===== */
-    footer {
-      background: var(--ink);
-      padding: clamp(28px, 5vw, 44px) clamp(16px, 4vw, 48px);
-      text-align: center;
-    }
-    .footer-inner { max-width: 960px; margin: 0 auto; }
-    footer p { font-size: 0.8rem; color: rgba(255,255,255,0.45); line-height: 1.8; }
-    footer a { color: rgba(255,255,255,0.6); transition: color 0.15s; }
-    footer a:hover { color: rgba(255,255,255,0.9); }
+        ul {
+            list-style: none;
+        }
 
-    /* ===== STICKY BAR ===== */
-    .sticky-bar {
-      position: fixed; bottom: 0; left: 0; right: 0;
-      background: rgba(253, 250, 246, 0.97);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-top: 1px solid var(--border);
-      padding: clamp(10px, 2vw, 14px) clamp(16px, 4vw, 24px);
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
-      z-index: 100;
-      box-shadow: 0 -4px 24px rgba(42, 31, 26, 0.08);
-    }
-    .sticky-bar-info { min-width: 0; }
-    .sticky-bar-name {
-      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-      font-weight: 700;
-      color: var(--ink);
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-    .sticky-bar-phone { font-size: clamp(0.7rem, 2vw, 0.78rem); color: var(--ink-2); }
-    .sticky-cta {
-      background: var(--accent);
-      color: #fff;
-      font-weight: 700;
-      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-      padding: clamp(8px, 2vw, 11px) clamp(16px, 3vw, 22px);
-      border-radius: 8px;
-      white-space: nowrap; flex-shrink: 0;
-      display: flex; align-items: center; gap: 6px;
-      transition: background 0.15s;
-    }
-    .sticky-cta:hover { background: var(--accent-dark); }
-    .pad-bottom { height: clamp(64px, 10vw, 80px); }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    /* ===== MOBILE — stack hero ===== */
-    @media (max-width: 640px) {
-      .hero {
-        grid-template-columns: 1fr;
-        min-height: unset;
-      }
-      .hero-img-col { min-height: clamp(200px, 50vw, 280px); }
-      .hero-text-col { padding: clamp(24px, 6vw, 36px) clamp(16px, 5vw, 24px); }
-      .services-grid { grid-template-columns: 1fr; }
-      .info-strip { grid-template-columns: 1fr; }
-    }
+        /* Glassmorphism Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1.8rem 3rem;
+            transition: var(--transition-medium);
+        }
 
-    @media (max-width: 380px) {
-      .topbar-inner { flex-wrap: wrap; }
-    }
+        header.scrolled {
+            padding: 1.2rem 3rem;
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(var(--color-gold-rgb), 0.12);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
 
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-      html { scroll-behavior: auto; }
-    }
-  </style>
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--color-gold);
+        }
+
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+            fill: var(--color-gold);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-text-secondary);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-gold);
+            transition: var(--transition-fast);
+        }
+
+        nav a:hover {
+            color: var(--color-gold);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .btn-header {
+            border: 1px solid var(--color-gold);
+            padding: 0.8rem 1.6rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: var(--transition-medium);
+        }
+
+        .btn-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-gold);
+            transition: var(--transition-medium);
+            z-index: -1;
+        }
+
+        .btn-header:hover {
+            color: #000;
+        }
+
+        .btn-header:hover::before {
+            left: 0;
+        }
+
+        .mobile-nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            z-index: 1001;
+            padding: 0.5rem;
+        }
+
+        .mobile-nav-toggle svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            transition: var(--transition-fast);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: var(--color-bg-primary);
+            overflow: hidden;
+            padding: 120px 0 60px 0;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, rgba(10, 10, 10, 0.95) 40%, rgba(10, 10, 10, 0.7) 70%, rgba(10, 10, 10, 0.4) 100%), 
+                             url('https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center 30%;
+            z-index: 1;
+            transform: scale(1.05);
+            animation: slowZoom 20s ease-out forwards;
+        }
+
+        @keyframes slowZoom {
+            100% { transform: scale(1); }
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 3rem;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .hero-subtitle {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.35em;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            border-left: 2px solid var(--color-gold);
+            padding-left: 1rem;
+        }
+
+        .hero-title {
+            font-size: clamp(2.8rem, 5.5vw, 5rem);
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-title span {
+            display: block;
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-weight: 300;
+            color: var(--color-gold);
+            margin-top: 0.5rem;
+        }
+
+        .hero-description {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            max-width: 580px;
+            margin-bottom: 3.5rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--color-gold);
+            color: #000;
+            padding: 1.2rem 2.8rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            border: 1px solid var(--color-gold);
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(var(--color-gold-rgb), 0.15);
+            transition: var(--transition-medium);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--color-gold);
+            box-shadow: 0 10px 30px rgba(var(--color-gold-rgb), 0);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #fff;
+            padding: 1.2rem 2.8rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            cursor: pointer;
+            transition: var(--transition-medium);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+            transform: translateY(-3px);
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .hero-frame {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/5;
+            max-width: 400px;
+            border: 1px solid rgba(var(--color-gold-rgb), 0.25);
+            padding: 1.5rem;
+            background: rgba(18, 18, 18, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            transition: var(--transition-slow);
+        }
+
+        .hero-frame-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%) brightness(0.95);
+            transition: var(--transition-slow);
+            pointer-events: none;
+        }
+
+        .hero-frame:hover {
+            border-color: var(--color-gold);
+            box-shadow: 0 30px 60px rgba(var(--color-gold-rgb), 0.12);
+        }
+
+        .hero-frame:hover .hero-frame-img {
+            filter: grayscale(0%) brightness(1);
+        }
+
+        /* Ribbon Promo Bar */
+        .marquee-bar {
+            background-color: var(--color-bg-secondary);
+            border-top: 1px solid rgba(var(--color-gold-rgb), 0.15);
+            border-bottom: 1px solid rgba(var(--color-gold-rgb), 0.15);
+            padding: 1.8rem 0;
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+        }
+
+        .marquee-content {
+            display: flex;
+            white-space: nowrap;
+            animation: marquee 25s linear infinite;
+            gap: 4rem;
+        }
+
+        .marquee-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.25em;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+        }
+
+        .marquee-item span.gold {
+            color: var(--color-gold);
+        }
+
+        .marquee-separator {
+            color: var(--color-gold);
+            font-size: 1rem;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+
+        /* Sections Styling */
+        section {
+            padding: var(--spacing-xl) 0;
+            position: relative;
+            z-index: 5;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 6rem auto;
+        }
+
+        .section-subtitle {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.35em;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+        }
+
+        .section-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .section-description {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        /* Services Grid Layout */
+        .services {
+            background-color: var(--color-bg-primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background-color: var(--color-bg-secondary);
+            border: 1px solid rgba(var(--color-gold-rgb), 0.12);
+            padding: 4rem 3rem;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-medium);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+            transform: scaleX(0);
+            transition: var(--transition-medium);
+        }
+
+        .service-icon-wrapper {
+            margin-bottom: 2.5rem;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-icon {
+            width: 100%;
+            height: 100%;
+            fill: var(--color-gold);
+            opacity: 0.85;
+            transition: var(--transition-fast);
+        }
+
+        .service-title {
+            font-size: 1.7rem;
+            margin-bottom: 1.2rem;
+            transition: var(--transition-fast);
+            font-weight: 400;
+        }
+
+        .service-desc {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+
+        .service-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 1.8rem;
+        }
+
+        .service-price {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            color: var(--color-gold);
+            font-weight: 600;
+        }
+
+        .service-price span {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-right: 0.2rem;
+        }
+
+        .service-action {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #fff;
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .service-action svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+            transform: translateX(0);
+            transition: var(--transition-fast);
+        }
+
+        /* Hover States on cards */
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(var(--color-gold-rgb), 0.35);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        .service-card:hover .service-title {
+            color: var(--color-gold);
+        }
+
+        .service-card:hover .service-action {
+            color: var(--color-gold);
+        }
+
+        .service-card:hover .service-action svg {
+            transform: translateX(6px);
+        }
+
+        /* Philosophy - Staggered details and image split */
+        .philosophy {
+            background-color: var(--color-bg-secondary);
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .philosophy-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 750px;
+        }
+
+        .philosophy-visual {
+            background-image: linear-gradient(to right, rgba(18, 18, 18, 0.5) 0%, rgba(18, 18, 18, 0.95) 100%), 
+                             url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=1200&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            min-height: 450px;
+        }
+
+        .philosophy-content {
+            padding: var(--spacing-xl) var(--spacing-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: var(--color-bg-secondary);
+        }
+
+        .philosophy-list {
+            margin-top: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .philosophy-item {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .philosophy-item-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            fill: var(--color-gold);
+            margin-top: 0.2rem;
+        }
+
+        .philosophy-item-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .philosophy-item-desc {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        /* About Section (Interactive Collage) */
+        .about {
+            background-color: var(--color-bg-primary);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-text {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .about-quote {
+            border-left: 2px solid var(--color-gold);
+            padding-left: 2rem;
+            margin: 3.5rem 0;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .quote-author {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: var(--color-gold);
+            text-transform: uppercase;
+        }
+
+        .about-visual {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-img-wrapper {
+            position: relative;
+            width: 80%;
+            aspect-ratio: 3/4;
+            border: 1px solid rgba(var(--color-gold-rgb), 0.25);
+            padding: 1.2rem;
+            background: rgba(18, 18, 18, 0.4);
+        }
+
+        .about-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(30%) brightness(0.9);
+            transition: var(--transition-slow);
+        }
+
+        .about-img-floating {
+            position: absolute;
+            width: 55%;
+            aspect-ratio: 1/1;
+            bottom: -12%;
+            left: -18%;
+            border: 1px solid var(--color-gold);
+            padding: 0.8rem;
+            background-color: var(--color-bg-primary);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+            transition: var(--transition-slow);
+        }
+
+        .about-img-floating img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.85);
+            transition: var(--transition-slow);
+        }
+
+        .about-img-wrapper:hover .about-img {
+            filter: grayscale(0%) brightness(1);
+        }
+
+        .about-img-floating:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 35px 70px rgba(var(--color-gold-rgb), 0.1);
+        }
+
+        .about-img-floating:hover img {
+            filter: brightness(1);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--color-bg-secondary);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--color-bg-primary);
+            border: 1px solid rgba(var(--color-gold-rgb), 0.1);
+            padding: 4rem 3rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: var(--transition-medium);
+        }
+
+        .testimonial-card:hover {
+            border-color: rgba(var(--color-gold-rgb), 0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-quote-icon {
+            position: absolute;
+            top: 2.5rem;
+            right: 3rem;
+            width: 36px;
+            height: 36px;
+            fill: rgba(var(--color-gold-rgb), 0.08);
+        }
+
+        .stars {
+            display: flex;
+            gap: 0.4rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .star-icon {
+            width: 15px;
+            height: 15px;
+            fill: var(--color-gold);
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            font-weight: 300;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            flex-grow: 1;
+            font-style: italic;
+        }
+
+        .testimonial-user {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--color-bg-secondary);
+            border: 1px solid var(--color-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-weight: 700;
+            color: var(--color-gold);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .user-info h4 {
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.2rem;
+        }
+
+        .user-info p {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            letter-spacing: 0.05em;
+        }
+
+        /* Contact Details & Booking Form */
+        .contact {
+            background-color: var(--color-bg-primary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 6rem;
+        }
+
+        .contact-form-container {
+            background-color: var(--color-bg-secondary);
+            border: 1px solid rgba(var(--color-gold-rgb), 0.15);
+            padding: 5rem 4rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            position: relative;
+        }
+
+        .contact-form-title {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .contact-form-desc {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 3.5rem;
+            font-weight: 300;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.8rem 0;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+            color: #fff;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            font-weight: 300;
+            outline: none;
+            transition: var(--transition-fast);
+        }
+
+        .form-label {
+            position: absolute;
+            top: 0.8rem;
+            left: 0;
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            font-weight: 300;
+            pointer-events: none;
+            transition: var(--transition-fast);
+        }
+
+        .form-input:focus {
+            border-bottom-color: var(--color-gold);
+        }
+
+        /* Float label implementation */
+        .form-input:focus ~ .form-label,
+        .form-input:not(:placeholder-shown) ~ .form-label {
+            top: -1.2rem;
+            font-size: 0.75rem;
+            color: var(--color-gold);
+            letter-spacing: 0.1em;
+        }
+
+        select.form-input {
+            color: var(--color-text-secondary);
+            cursor: pointer;
+        }
+
+        select.form-input option {
+            background-color: var(--color-bg-secondary);
+            color: #fff;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--color-gold);
+            color: #000;
+            border: 1px solid var(--color-gold);
+            padding: 1.3rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(var(--color-gold-rgb), 0.15);
+            transition: var(--transition-medium);
+        }
+
+        .btn-submit:hover {
+            background-color: transparent;
+            color: var(--color-gold);
+            box-shadow: 0 10px 30px rgba(var(--color-gold-rgb), 0);
+        }
+
+        .contact-info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .info-card {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .info-card-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            fill: var(--color-gold);
+            margin-top: 0.25rem;
+        }
+
+        .info-card-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card-value {
+            font-size: 1.15rem;
+            color: var(--color-text-primary);
+            font-weight: 300;
+        }
+
+        .info-card-value a:hover {
+            color: var(--color-gold);
+        }
+
+        /* Gold-Theme Filtered Map */
+        .map-wrapper {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            border: 1px solid rgba(var(--color-gold-rgb), 0.22);
+            padding: 0.6rem;
+            background-color: var(--color-bg-secondary);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            /* Invert map to fit dark gold styling */
+            filter: grayscale(100%) invert(92%) sepia(8%) saturate(300%) hue-rotate(330deg) brightness(95%) contrast(90%);
+            -webkit-filter: grayscale(100%) invert(92%) sepia(8%) saturate(300%) hue-rotate(330deg) brightness(95%) contrast(90%);
+            transition: var(--transition-slow);
+        }
+
+        .map-container:hover iframe {
+            filter: grayscale(60%) invert(92%) sepia(12%) saturate(450%) hue-rotate(330deg) brightness(95%) contrast(90%);
+        }
+
+        /* Luxury Footer */
+        footer {
+            background-color: #050505;
+            border-top: 1px solid rgba(var(--color-gold-rgb), 0.15);
+            padding: 6rem 0 3.5rem 0;
+            z-index: 5;
+            position: relative;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+            gap: 4rem;
+            margin-bottom: 6rem;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+        }
+
+        .footer-logo {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .footer-logo span {
+            color: var(--color-gold);
+        }
+
+        .footer-tagline {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .social-icon-btn {
+            width: 38px;
+            height: 38px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: var(--color-text-secondary);
+            transition: var(--transition-fast);
+        }
+
+        .social-icon-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .social-icon-btn:hover {
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+            background-color: rgba(var(--color-gold-rgb), 0.05);
+            transform: translateY(-4px);
+        }
+
+        .footer-nav-col h4 {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 2.2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            font-weight: 300;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-gold);
+            padding-left: 6px;
+        }
+
+        .footer-hours-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.8rem 1.8rem;
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            font-weight: 300;
+        }
+
+        .footer-hours-day {
+            color: var(--color-text-muted);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            font-weight: 300;
+        }
+
+        .footer-policy-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .footer-policy-links a {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .footer-policy-links a:hover {
+            color: var(--color-gold);
+        }
+
+        /* Success/Confirmation Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2000;
+            background: rgba(5, 5, 5, 0.92);
+            backdrop-filter: blur(15px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition-medium);
+        }
+
+        .modal.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .modal-content {
+            background-color: var(--color-bg-secondary);
+            border: 1px solid var(--color-gold);
+            max-width: 520px;
+            width: 90%;
+            padding: 4.5rem 3.5rem;
+            text-align: center;
+            transform: scale(0.9);
+            transition: var(--transition-medium);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+        }
+
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-icon {
+            width: 60px;
+            height: 60px;
+            fill: var(--color-gold);
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .modal-title {
+            font-size: 2.4rem;
+            margin-bottom: 1.2rem;
+            font-weight: 300;
+        }
+
+        .modal-text {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .btn-modal-close {
+            background-color: var(--color-gold);
+            color: #000;
+            border: 1px solid var(--color-gold);
+            padding: 1rem 2.5rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .btn-modal-close:hover {
+            background-color: transparent;
+            color: var(--color-gold);
+        }
+
+        /* Scroll triggered fade-in styles */
+        .reveal {
+            opacity: 0;
+            transform: translateY(45px);
+            transition: var(--transition-slow);
+        }
+
+        .reveal.reveal-left {
+            transform: translateX(-45px);
+        }
+
+        .reveal.reveal-right {
+            transform: translateX(45px);
+        }
+
+        .reveal.reveal-scale {
+            transform: scale(0.94);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translate(0, 0) scale(1);
+        }
+
+        /* Mobile Responsive Breakpoints */
+        @media (max-width: 1200px) {
+            .hero-container {
+                gap: 3rem;
+            }
+            .about-grid {
+                gap: 4rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1.2fr 0.8fr 0.8fr 1.2fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            :root {
+                --spacing-xl: 6rem;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 4.5rem;
+            }
+            .philosophy-container {
+                grid-template-columns: 1fr;
+            }
+            .philosophy-visual {
+                min-height: 380px;
+                order: 1;
+            }
+            .philosophy-content {
+                order: 2;
+                padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.2rem 1.8rem;
+            }
+            header.scrolled {
+                padding: 1rem 1.8rem;
+            }
+            .mobile-nav-toggle {
+                display: block;
+            }
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 380px;
+                height: 100vh;
+                background-color: var(--color-bg-secondary);
+                border-left: 1px solid rgba(var(--color-gold-rgb), 0.15);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2.2rem;
+                z-index: 1000;
+                transition: var(--transition-medium);
+                padding: 3rem;
+            }
+            nav.active {
+                right: 0;
+            }
+            .btn-header {
+                display: none;
+            }
+            .hero {
+                padding: 120px 0 40px 0;
+            }
+            .hero-bg {
+                background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.96) 30%, rgba(10, 10, 10, 0.75) 60%, rgba(10, 10, 10, 0.45) 100%), 
+                                 url('https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=1920&auto=format&fit=crop');
+            }
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 0 1.8rem;
+            }
+            .hero-content {
+                align-items: center;
+            }
+            .hero-subtitle {
+                border-left: none;
+                padding-left: 0;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .hero-visual {
+                justify-content: center;
+                margin-top: 2rem;
+            }
+            .section-container {
+                padding: 0 1.8rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 6rem;
+            }
+            .about-visual {
+                order: 2;
+            }
+            .about-content {
+                order: 1;
+            }
+            .about-img-floating {
+                left: -8%;
+                bottom: -8%;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-form-container {
+                padding: 4rem 2rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- ===== TOP BAR ===== -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="topbar-brand">Rustic Scruff</div>
-    <a href="tel:+1 815-518-5153" class="topbar-phone">📞 +1 815-518-5153</a>
-  </div>
-</div>
+    <!-- Header / Navigation -->
+    <header id="site-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24">
+                    <path d="M12 14c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm-4.5-4c-.83 0-1.5-.67-1.5-1.5S6.67 7 7.5 7 9 7.67 9 8.5 8.33 10 7.5 10zm9 0c-.83 0-1.5-.67-1.5-1.5S15.67 7 16.5 7s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-11 5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                </svg>
+                Rustic <span>Scruff</span>
+            </a>
+            
+            <nav id="site-nav">
+                <a href="#services">Services</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#about">Our Story</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="hero-text-col">
-    <div class="hero-badge">Cleaning Service</div>
-    <h1>Rustic Scruff</h1>
-    <p class="hero-sub">Professional Cleaning Service services in Coal City, IL. Reliable, thorough, and built on genuine 5-star reviews.</p>
-    <div class="hero-rating" style="display: flex;">
-      <span class="hero-stars">★★★★★</span>
-      <span>4.9 ·  Google reviews</span>
-    </div>
-    <div class="hero-actions">
-      <a href="tel:+1 815-518-5153" class="btn-primary">📞 Call Now</a>
-      <a href="#" target="_blank" rel="noopener" class="btn-outline">📍 See on Google</a>
-    </div>
-  </div>
-  <div class="hero-img-col" aria-hidden="true"></div>
-</section>
+            <button class="btn-header" onclick="document.getElementById('contact').scrollIntoView();">Book Appointment</button>
 
-<!-- ===== SERVICES ===== -->
-<section class="section section--tinted">
-  <div class="wrap">
-    <div class="section-header">
-      <div class="section-label">What We Do</div>
-      <h2 class="section-title">Our Services</h2>
-    </div>
-    <div class="services-grid">
+            <button class="mobile-nav-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <svg viewBox="0 0 24 24" id="toggle-icon">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
 
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Regular Home Cleaning</h3>
-      <p>Weekly or bi-weekly cleaning to keep your home spotless and fresh.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Deep Cleaning</h3>
-      <p>Thorough top-to-bottom cleaning for kitchens, bathrooms, and all living areas.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Move-In / Move-Out Clean</h3>
-      <p>Get your space move-in ready or leave it spotless when you go.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Office & Commercial Clean</h3>
-      <p>Keep your workspace professional, sanitized, and employee-ready.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Post-Construction Clean</h3>
-      <p>Remove dust, debris, and residues after renovation or building work.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Eco-Friendly Options</h3>
-      <p>Green cleaning products available — safe for kids, pets, and the planet.</p>
-    </div>
-    </div>
-  </div>
-</section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-subtitle">Coal City's Premier Pet Spa</div>
+                    <h1 class="hero-title">Where rustic charm <span>meets luxury grooming.</span></h1>
+                    <p class="hero-description">A cage-free, low-stress sanctuary dedicated to pampering your best friend. Every pet is treated with customized care and master styling.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView();">Book Appointment</button>
+                        <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView();">Our Services</button>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-right">
+                    <div class="hero-frame hero-parallax-container">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=800" alt="Excellently groomed poodle looking elegant" class="hero-frame-img hero-parallax-img">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- ===== INFO + MAP ===== -->
-<section class="section section--white">
-  <div class="wrap wrap--narrow">
-    <div class="section-header">
-      <div class="section-label">Find Us</div>
-      <h2 class="section-title">Contact &amp; Location</h2>
-    </div>
-    <div class="info-strip">
-      <div class="info-item">
-        <div class="info-item-label">📍 Address</div>
-        <div class="info-item-value">740 E Division St</div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">📞 Phone</div>
-        <div class="info-item-value"><a href="tel:+1 815-518-5153" class="info-link">+1 815-518-5153</a></div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">🕐 Service Area</div>
-        <div class="info-item-value">Coal City, IL &amp; surrounding areas</div>
-      </div>
-    </div>
-    <div class="map-wrap">
-      <iframe
-        title="Rustic Scruff location"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=740+E+Division+St&amp;output=embed">
-      </iframe>
-    </div>
-  </div>
-</section>
+        <!-- Ribbon Bar -->
+        <div class="marquee-bar">
+            <div class="marquee-content">
+                <!-- Set 1 -->
+                <div class="marquee-item"><span class="gold">Cage-Free</span> Environment <span class="marquee-separator">✦</span></div>
+                <div class="marquee-item">Low-Stress Philosophy <span class="marquee-separator">✦</span></div>
+                <div class="marquee-item"><span class="gold">Organic</span> Botanicals <span class="marquee-separator">✦</span></div>
+                <div class="marquee-item">One-On-One Care <span class="marquee-separator">✦</span></div>
+                <div class="marquee-item"><span class="gold">Master</span> Stylists <span class="marquee-separator">✦</span></div>
+                <!-- Set 2 (Duplicates for seamless loop) -->
+                <div class="marquee-item"><span class="gold">Cage-Free</span> Environment <span class="marquee-separator">✦</span></div>
+                <div class="marquee-item">Low-Stress Philosophy <span class="marquee-separator">✦</span></div>
+                <div class="marquee-item"><span class="gold">Organic</span> Botanicals <span class="marquee-separator">✦</span></div>
+                <div class="marquee-item">One-On-One Care <span class="marquee-separator">✦</span></div>
+                <div class="marquee-item"><span class="gold">Master</span> Stylists <span class="marquee-separator">✦</span></div>
+            </div>
+        </div>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="footer-inner">
-    <p><strong>Rustic Scruff</strong> &nbsp;·&nbsp; 740 E Division St</p>
-    <p style="margin-top:8px;">+1 815-518-5153</p>
-    <p style="margin-top:12px;">Preview site built by <a href="https://clawops.studio" target="_blank">ClawOps Studio</a></p>
-  </div>
-</footer>
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <div class="section-subtitle">EXQUISITE PAMPERING</div>
+                    <h2 class="section-title">Luxury Services & Packages</h2>
+                    <p class="section-description">Every appointment is customized to suit your dog's skin type, coat texture, size, and temperament. Explore our premium treatments.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card reveal reveal-scale">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M21 11H3c-1.1 0-2 .9-2 2v2c0 3.31 2.69 6 6 6h10c3.31 0 6-2.69 6-6v-2c0-1.1-.9-2-2-2zm-1 4c0 2.21-1.79 4-4 4H8c-2.21 0-4-1.79-4-4v-1h16v1zM12 2c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V3c0-.55-.45-1-1-1zm-4 2c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1V5c0-.55-.45-1-1-1zm8 0c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1V5c0-.55-.45-1-1-1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Spa Bath & Brush-Out</h3>
+                        <p class="service-desc">A deep-cleansing hydro-massage bath with natural organic shampoos, detailed blow-out, hand brush-out, and sanitary tidy.</p>
+                        <div class="service-meta">
+                            <div class="service-price"><span>From</span>$45</div>
+                            <div class="service-action" onclick="bookService('Spa Bath & Brush-Out')">
+                                Request 
+                                <svg viewBox="0 0 24 24"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- ===== STICKY CTA ===== -->
-<div class="pad-bottom"></div>
-<div class="sticky-bar">
-  <div class="sticky-bar-info">
-    <div class="sticky-bar-name">Rustic Scruff</div>
-    <div class="sticky-bar-phone">+1 815-518-5153</div>
-  </div>
-  <a href="tel:+1 815-518-5153" class="sticky-cta">📞 Call Now</a>
-</div>
+                    <!-- Service 2 -->
+                    <div class="service-card reveal reveal-scale">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M6 12c-1.65 0-3 1.35-3 3s1.35 3 3 3c1.3 0 2.4-0.84 2.82-2H11l2-2h4l4 4V4L17 8h-4l-2-2H8.82C8.4 4.84 7.3 4 6 4c-1.65 0-3 1.35-3 3s1.35 3 3 3c1.3 0 2.4-0.84 2.82-2l2.18 2.18-2.18 2.18C8.4 11.16 7.3 12 6 12zm0-6c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 8c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Breed-Specific Haircut</h3>
+                        <p class="service-desc">Precision styling from standard AKC templates to modern custom cuts. Includes signature bath, hand scissor finish, and perfume.</p>
+                        <div class="service-meta">
+                            <div class="service-price"><span>From</span>$75</div>
+                            <div class="service-action" onclick="bookService('Breed-Specific Haircut')">
+                                Request
+                                <svg viewBox="0 0 24 24"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Service 3 -->
+                    <div class="service-card reveal reveal-scale">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M4.5 12C3.67 12 3 11.33 3 10.5S3.67 9 4.5 9 6 9.67 6 10.5 5.33 12 4.5 12zM7.5 8C6.67 8 6 7.33 6 6.5S6.67 5 7.5 5 9 5.67 9 6.5 8.33 8 7.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S11.67 5 12.5 5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3 4c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-5.5-1c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                <path d="M19 5l1.2 2.8L23 9l-2.8 1.2L19 13l-1.2-2.8L15 9l2.8-1.2L19 5z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Nail Trim & Filing</h3>
+                        <p class="service-desc">Precision clip followed by detailed diamond-dremel filing for perfectly smooth, round edges that keep paws and floors scratching-free.</p>
+                        <div class="service-meta">
+                            <div class="service-price"><span>From</span>$20</div>
+                            <div class="service-action" onclick="bookService('Nail Trim & Filing')">
+                                Request
+                                <svg viewBox="0 0 24 24"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card reveal reveal-scale">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M4.22 21.22l14.14-14.14c.59-.59 1.54-.59 2.12 0l.71.71c.59.59.59 1.54 0 2.12L7.05 24.05 4.22 21.22z"/>
+                                <path d="M16.5 5.5l1.5-1.5L19.5 5.5H16.5zm2 2l1.5-1.5 1.5 1.5H18.5z"/>
+                                <path d="M8 4.5l1.2 2.8L12 8.5l-2.8 1.2L8 12.5l-1.2-2.8L4 8.5l2.8-1.2L8 4.5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Teeth Brushing</h3>
+                        <p class="service-desc">Enzymatic cleaning paste coupled with breath freshening spray, plaque-defense coat, and specialized gum-soothing care.</p>
+                        <div class="service-meta">
+                            <div class="service-price"><span>From</span>$15</div>
+                            <div class="service-action" onclick="bookService('Teeth Brushing')">
+                                Request
+                                <svg viewBox="0 0 24 24"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card reveal reveal-scale">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 17.92c-3.75-1-6-4.98-6-8.98V6.8l6-2.25 6 2.25v4.14c0 4-2.25 7.98-6 8.98z"/>
+                                <path d="M12 6.5c-2.48 0-4.5 2.02-4.5 4.5 0 2.34 2.5 5.5 4.5 5.5s4.5-3.16 4.5-5.5c0-2.48-2.02-4.5-4.5-4.5zm0 7.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Flea & Tick Treatment</h3>
+                        <p class="service-desc">All-natural therapeutic botanical soak. Completely eliminates parasites, relieves itchiness, and nourishes irritated, hot-spot skin.</p>
+                        <div class="service-meta">
+                            <div class="service-price"><span>From</span>$30</div>
+                            <div class="service-action" onclick="bookService('Flea & Tick Treatment')">
+                                Request
+                                <svg viewBox="0 0 24 24"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card reveal reveal-scale">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M3 5h18v3H3V5zm2 5h2v9H5v-9zm4 0h2v9H9v-9zm4 0h2v9h-2v-9zm4 0h2v9h-2v-9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Signature De-Shedding</h3>
+                        <p class="service-desc">A deep undercoat carding and blow-out process using specialty furminator tools to significantly reduce home hair shedding.</p>
+                        <div class="service-meta">
+                            <div class="service-price"><span>From</span>$50</div>
+                            <div class="service-action" onclick="bookService('Signature De-Shedding')">
+                                Request
+                                <svg viewBox="0 0 24 24"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section (Split screen) -->
+        <section class="philosophy" id="philosophy">
+            <div class="philosophy-container">
+                <div class="philosophy-visual reveal"></div>
+                <div class="philosophy-content reveal reveal-right">
+                    <div class="section-subtitle">THE CAGE-FREE ADVANTAGE</div>
+                    <h2 class="section-title">A Low-Stress Haven</h2>
+                    <p class="section-description">We believe styling should feel like a luxurious spa day, not a traumatic containment. Our methods focus strictly on peace of mind and comfort.</p>
+                    
+                    <div class="philosophy-list">
+                        <!-- Item 1 -->
+                        <div class="philosophy-item">
+                            <svg class="philosophy-item-icon" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                            </svg>
+                            <div>
+                                <h4 class="philosophy-item-title">Strictly Cage-Free Environment</h4>
+                                <p class="philosophy-item-desc">No loud stack holding cages or confining boxes. Your pet resides in a spacious, custom lounge while awaiting styling.</p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="philosophy-item">
+                            <svg class="philosophy-item-icon" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                            </svg>
+                            <div>
+                                <h4 class="philosophy-item-title">One-On-One Stylist Care</h4>
+                                <p class="philosophy-item-desc">No multi-pet assembly lines. Your groomer dedicates their undivided attention and affection to your pet from start to finish.</p>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="philosophy-item">
+                            <svg class="philosophy-item-icon" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                            </svg>
+                            <div>
+                                <h4 class="philosophy-item-title">Soothing Aromatherapy & Music</h4>
+                                <p class="philosophy-item-desc">We use clean lavender infusions, gentle warm dryers, and relaxing soundscapes to soothe nervous dogs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-content reveal">
+                        <div class="section-subtitle">OUR PASSION</div>
+                        <h2 class="section-title">The Art of Canine Styling</h2>
+                        <p class="about-text">Founded with a deep love for animal aesthetics, Rustic Scruff is Coal City's premier destination for discerning pet parents who value excellence. We combine professional master grooming techniques with a calm, patient atmosphere.</p>
+                        <p class="about-text">Our dedicated stylists use only high-end, toxin-free coat shampoos and deep conditioners. We treats every pup that enters our doors as our own family.</p>
+                        
+                        <div class="about-quote">
+                            <p class="quote-text">"Grooming is more than a trim—it's a trust we build with every dog. We believe in patience over speed, and styling with absolute love."</p>
+                            <p class="quote-author">Jenna Vance — Owner & Stylist</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual reveal reveal-right">
+                        <div class="about-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800" alt="Beautiful dog receiving care" class="about-img">
+                            <div class="about-img-floating">
+                                <img src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600" alt="Grooming scissors and comb on dark background">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <div class="section-subtitle">HEARD IN THE PARKS</div>
+                    <h2 class="section-title">Stories from Happy Paws</h2>
+                    <p class="section-description">Our clients travel from across the Coal City area for our signature cage-free, high-end experience. Read their honest feedback.</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <!-- Card 1 -->
+                    <div class="testimonial-card reveal reveal-scale">
+                        <svg class="testimonial-quote-icon" viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                        <div class="stars">
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Rustic Scruff completely transformed grooming day for my nervous Golden Retriever. The cage-free setup makes an incredible difference. He returned home exceptionally relaxed, clean, and looking like a show dog!"</p>
+                        <div class="testimonial-user">
+                            <div class="avatar">EV</div>
+                            <div class="user-info">
+                                <h4>Eleanor Vance</h4>
+                                <p>Owner of Barnaby</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="testimonial-card reveal reveal-scale">
+                        <svg class="testimonial-quote-icon" viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                        <div class="stars">
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"The breed-specific haircut they gave my Poodle was sheer perfection. Masterful skill, impeccable service, and the premium dark-gold salon aesthetic shows how much they care about luxury and quality."</p>
+                        <div class="testimonial-user">
+                            <div class="avatar">MB</div>
+                            <div class="user-info">
+                                <h4>Marcus Brody</h4>
+                                <p>Owner of Pierre</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="testimonial-card reveal reveal-scale">
+                        <svg class="testimonial-quote-icon" viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                        <div class="stars">
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Their de-shedding treatment is absolute magic! My house has never had less loose pet fur. Additionally, the nail filing left my Lab's nails so smooth, preventing scratches on my hardwood floors."</p>
+                        <div class="testimonial-user">
+                            <div class="avatar">SJ</div>
+                            <div class="user-info">
+                                <h4>Sarah Jenkins</h4>
+                                <p>Owner of Bella</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Booking Form Section -->
+        <section class="contact" id="contact">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <!-- Left Form -->
+                    <div class="contact-form-container reveal">
+                        <h3 class="contact-form-title">Request an Appointment</h3>
+                        <p class="contact-form-desc">Provide details below. Our concierge will contact you within 24 hours to confirm date and time.</p>
+                        
+                        <form id="booking-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <input type="text" id="owner-name" class="form-input" placeholder=" " required>
+                                <label for="owner-name" class="form-label">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-input" placeholder=" " required>
+                                <label for="email" class="form-label">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" class="form-input" placeholder=" " required>
+                                <label for="phone" class="form-label">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="pet-name" class="form-input" placeholder=" " required>
+                                <label for="pet-name" class="form-label">Pet's Name</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="service-select" class="form-input" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Spa Bath & Brush-Out">Spa Bath & Brush-Out</option>
+                                    <option value="Breed-Specific Haircut">Breed-Specific Haircut</option>
+                                    <option value="Nail Trim & Filing">Nail Trim & Filing</option>
+                                    <option value="Teeth Brushing">Teeth Brushing</option>
+                                    <option value="Flea & Tick Treatment">Flea & Tick Treatment</option>
+                                    <option value="Signature De-Shedding">Signature De-Shedding</option>
+                                </select>
+                                <label for="service-select" class="form-label">Select Treatment</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="details" class="form-input" placeholder=" ">
+                                <label for="details" class="form-label">Breed / Special Needs</label>
+                            </div>
+                            <button type="submit" class="btn-submit" id="submit-btn">Request Reservation</button>
+                        </form>
+                    </div>
+
+                    <!-- Right Info / Map -->
+                    <div class="contact-info-container reveal reveal-right">
+                        <div class="info-cards">
+                            <!-- Card 1 -->
+                            <div class="info-card">
+                                <svg class="info-card-icon" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="info-card-title">Grooming Salon Location</h4>
+                                    <p class="info-card-value">740 E Division St<br>Coal City, IL 60416</p>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="info-card">
+                                <svg class="info-card-icon" viewBox="0 0 24 24">
+                                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.57a1 1 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.5 4c0-.55-.45-1-1-1H4.03C3.47 3 3 3.47 3 4.02 3 13.39 10.61 21 19.98 21c.54 0 1-.46 1-1.02v-3.6c0-.55-.45-1-1-1z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="info-card-title">Direct Salon Phone</h4>
+                                    <p class="info-card-value"><a href="tel:+18155185153">+1 815-518-5153</a></p>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="info-card">
+                                <svg class="info-card-icon" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="info-card-title">Electronic Inquiry</h4>
+                                    <p class="info-card-value"><a href="mailto:rusticscruffgrooming@gmail.com">rusticscruffgrooming@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map -->
+                        <div class="map-wrapper">
+                            <div class="map-container">
+                                <iframe src="https://maps.google.com/maps?q=740%20E%20Division%20St,%20Coal%20City,%20IL%2060416&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="section-container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-brand">
+                    <div class="footer-logo">Rustic <span>Scruff</span></div>
+                    <p class="footer-tagline">Providing cage-free, premium styling services that prioritize the safety and mental comfort of your pets in Coal City, IL.</p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com/" target="_blank" class="social-icon-btn" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/" target="_blank" class="social-icon-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 0.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-icon-btn" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="footer-nav-col">
+                    <h4>Navigate</h4>
+                    <div class="footer-links">
+                        <a href="#services">Our Services</a>
+                        <a href="#philosophy">Philosophy</a>
+                        <a href="#about">Our Story</a>
+                        <a href="#testimonials">Reviews</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer-nav-col">
+                    <h4>Direct Link</h4>
+                    <div class="footer-links">
+                        <a href="tel:+18155185153">Call Salon</a>
+                        <a href="mailto:rusticscruffgrooming@gmail.com">Send Email</a>
+                        <a href="https://maps.google.com/?q=740+E+Division+St,+Coal+City,+IL+60416" target="_blank">Get Directions</a>
+                    </div>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-nav-col">
+                    <h4>Salon Hours</h4>
+                    <div class="footer-hours-grid">
+                        <div class="footer-hours-day">Mon - Fri</div>
+                        <div>8:00 AM - 6:00 PM</div>
+                        <div class="footer-hours-day">Saturday</div>
+                        <div>9:00 AM - 5:00 PM</div>
+                        <div class="footer-hours-day">Sunday</div>
+                        <div>Closed</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom footer -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Rustic Scruff. All rights reserved. Elegant pet care in Coal City, Illinois.</p>
+                <div class="footer-policy-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <svg class="modal-icon" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            <h3 class="modal-title">Request Received</h3>
+            <p class="modal-text">Thank you for booking with Rustic Scruff. Our stylists will verify our calendar and contact you shortly at the provided number to finalize your reservation.</p>
+            <button class="btn-modal-close" onclick="closeSuccessModal()">Return to Site</button>
+        </div>
+    </div>
+
+    <!-- JavaScript logic -->
+    <script>
+        // Sticky Header scroll script
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('site-header');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const siteNav = document.getElementById('site-nav');
+        const toggleIcon = document.getElementById('toggle-icon');
+
+        menuToggle.addEventListener('click', () => {
+            siteNav.classList.toggle('active');
+            
+            // Toggle hamburger icon to X close icon
+            if (siteNav.classList.contains('active')) {
+                toggleIcon.innerHTML = '<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>';
+            } else {
+                toggleIcon.innerHTML = '<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>';
+            }
+        });
+
+        // Auto close mobile navigation menu when a link is clicked
+        const navLinks = document.querySelectorAll('#site-nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                siteNav.classList.remove('active');
+                toggleIcon.innerHTML = '<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>';
+            });
+        });
+
+        // Intercept Services "Request" actions to autofill and scroll to form
+        function bookService(serviceName) {
+            const serviceSelect = document.getElementById('service-select');
+            serviceSelect.value = serviceName;
+            
+            // Trigger select change event styling
+            serviceSelect.dispatchEvent(new Event('change'));
+            
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Form Submit Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('submit-btn');
+            
+            // Temporary button loading state
+            submitBtn.textContent = 'Verifying Details...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+
+            setTimeout(() => {
+                // Open Success Modal
+                document.getElementById('success-modal').classList.add('active');
+                
+                // Reset form values
+                document.getElementById('booking-form').reset();
+                
+                // Reset button text
+                submitBtn.textContent = 'Request Reservation';
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+            }, 1200);
+        }
+
+        // Close success modal
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.remove('active');
+        }
+
+        // Parallax hover movement on Hero frame
+        const heroSection = document.getElementById('hero');
+        const parallaxImg = document.querySelector('.hero-parallax-img');
+        
+        if (heroSection && parallaxImg) {
+            heroSection.addEventListener('mousemove', (e) => {
+                const moveX = (e.clientX - window.innerWidth / 2) / 35;
+                const moveY = (e.clientY - window.innerHeight / 2) / 35;
+                parallaxImg.style.transform = `translate3d(${moveX}px, ${moveY}px, 0) scale(1.03)`;
+            });
+            
+            heroSection.addEventListener('mouseleave', () => {
+                parallaxImg.style.transform = `translate3d(0, 0, 0) scale(1)`;
+            });
+        }
+
+        // Intersection Observer for scroll animations
+        const revealOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Trigger only once
+                }
+            });
+        }, revealOptions);
+
+        // Track and reveal all sections & elements
+        const animatedElements = document.querySelectorAll('.reveal, .service-card, .testimonial-card');
+        animatedElements.forEach(el => {
+            // Apply reveal base class to elements if they don't have it
+            if (!el.classList.contains('reveal')) {
+                el.classList.add('reveal');
+            }
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
